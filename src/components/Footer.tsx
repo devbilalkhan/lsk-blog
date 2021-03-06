@@ -1,5 +1,5 @@
 import { Box, Flex, Icon, Link as ChakraLink, Stack, StackDivider, Text } from '@chakra-ui/react'
-import Container from '@/components/Container'
+import Container from '@/src/components/Container'
 import { useState } from 'react'
 import { FiGlobe, FiHeart, FiMail } from 'react-icons/fi'
 

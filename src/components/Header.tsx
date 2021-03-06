@@ -12,7 +12,7 @@ import {
 import React from 'react'
 import { IoMdMoon } from 'react-icons/io'
 import { BiSun } from 'react-icons/bi'
-import Container from '@/components/Container'
+import Container from '@/src/components/Container'
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <Box position="sticky" top={0} zIndex="2" py={12}>
-        <Container>
+        <Container w={['90%', null, '80%', '80%']}>
           <SimpleGrid columns={3}>
             <Flex align="center" px={4}>
               <Link href="/" passHref>
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = () => {
                     fontWeight={colorMode === 'dark' ? 'regular' : 'bold'}
                     letterSpacing="10px"
                   >
-                    LSK
+                    DR.LSK
                   </Heading>
                 </ChakraLink>
               </Link>
@@ -44,8 +44,15 @@ const Header: React.FC<HeaderProps> = () => {
                 _focus={{ border: '2px' }}
               />
             </Box>
-            <Flex direction="row-reverse" px={4} align="center">
-              <Text letterSpacing="5px">LAURASMITHKHAN@GMAIL.COM</Text>
+            <Flex
+              direction="row-reverse"
+              align="center"
+              px={4}
+              display={{ base: 'none', lg: 'flex' }}
+            >
+              <Text letterSpacing="5px" fontSize={{ lg: '0.7rem' }}>
+                LAURASMITHKHAN@GMAIL.COM
+              </Text>
             </Flex>
           </SimpleGrid>
         </Container>

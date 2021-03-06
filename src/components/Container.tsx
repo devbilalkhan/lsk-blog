@@ -5,7 +5,7 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps & BoxProps> = ({ children, main = false, ...rest }) => {
   return (
     <>
-      <Box maxW={{ base: '100%', xl: '1280px' }} mx="auto" flexGrow={main ? 1 : 0} {...rest}>
+      <Box maxW={{ base: '100%', xl: '1100px' }} mx="auto" flexGrow={main ? 1 : 0} {...rest}>
         {children}
       </Box>
     </>

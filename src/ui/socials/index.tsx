@@ -14,7 +14,7 @@ export const Socials: React.FC<indexProps> = () => {
       zIndex="2"
       w={10}
       top="35vh"
-      display={{ sm: 'none', md: 'block' }}
+      display={{ base: 'none', md: 'block' }}
     >
       <IconButton
         bg="none"
