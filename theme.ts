@@ -15,7 +15,7 @@ const breakpoints: any = createBreakpoints({
 const theme = extendTheme({
   breakpoints,
   fonts: {
-    heading: `'Libby', ${defaultTheme.fonts.heading}`,
+    // heading: `'Libby', ${defaultTheme.fonts.heading}`,
     body: `'Poppins', ${defaultTheme.fonts.body}`,
   },
   config: {
@@ -35,7 +35,7 @@ const theme = extendTheme({
             _disabled: {
               bg: `${props.colorScheme}.50`,
             },
-            bg: `${props.colorScheme}.100`,
+            bg: `${props.colorScheme}.600`,
           },
           _active: {
             bg: `${props.colorScheme}.200`,

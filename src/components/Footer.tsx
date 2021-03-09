@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Link as ChakraLink, Stack, StackDivider, Text } from '@chakra-ui/react'
+import { Flex, Icon, Link as ChakraLink, Stack, StackDivider, Text } from '@chakra-ui/react'
 import Container from '@/src/components/Container'
 import { useState } from 'react'
 import { FiGlobe, FiHeart, FiMail } from 'react-icons/fi'
@@ -6,15 +6,13 @@ import { FiGlobe, FiHeart, FiMail } from 'react-icons/fi'
 const Footer: React.FC = () => {
   const [hovered, setHovered] = useState(false)
   return (
-    <Box
+    <Flex
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       w="100%"
       bg="gray.900"
       fontSize="sm"
       color="whiteAlpha.900"
-      position="absolute"
-      bottom="0"
     >
       <Container opacity={hovered ? 1 : 0.6} transition="all 100ms linear">
         <Flex p={4} flexWrap="wrap">
@@ -42,7 +40,7 @@ const Footer: React.FC = () => {
           </Stack>
         </Flex>
       </Container>
-    </Box>
+    </Flex>
   )
 }
 

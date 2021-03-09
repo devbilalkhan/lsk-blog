@@ -17,11 +17,11 @@ const Hero: React.FC<HeroProps> = () => {
               <Heading
                 as="h1"
                 fontWeight={colorMode === 'dark' ? 'semibold' : 'semibold'}
-                fontSize={{ base: '1.5rem', lg: '1.6rem', xl: '1.6rem' }}
+                fontSize={{ base: '1.5rem', lg: '2.6rem' }}
                 letterSpacing="0px"
                 mb={6}
               >
-                Dr Laura Smith-Khan
+                Dr LAURA SMITH-KHAN
               </Heading>
               <Heading
                 mb={20}
@@ -39,7 +39,9 @@ const Hero: React.FC<HeroProps> = () => {
                 //   fontWeight="semibold"
                 //   fontSize="1.2rem"
                 //   bg={colorMode === 'dark' ? 'purple.600' : 'purple.400'}
-                //   color="white"
+                color="white"
+                bg="gray.800"
+                colorScheme="gray"
                 //   letterSpacing="3px"
                 //   boxShadow="xl"
                 variant="subtle"
@@ -47,7 +49,7 @@ const Hero: React.FC<HeroProps> = () => {
                 Get In Touch
               </Button>
             </Flex>
-            <Box align="center" mx="auto" justify="center" display={{ base: 'none', md: 'flex' }}>
+            <Box align="center" mx="auto" justify="center" display={{ base: 'none', lg: 'flex' }}>
               <Image
                 src="./character.svg"
                 boxSize={{ md: '300px', lg: '400px' }}

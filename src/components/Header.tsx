@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
-      <Box position="sticky" top={0} zIndex="2" py={12}>
+      <Box position="sticky" top={0} zIndex="2" py={12} style={{ backdropFilter: 'blur(40px)' }}>
         <Container w={['90%', null, '80%', '80%']}>
           <SimpleGrid columns={3}>
             <Flex align="center" px={4}>
