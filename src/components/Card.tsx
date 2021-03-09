@@ -14,7 +14,7 @@ import { BsArrowRight } from 'react-icons/bs'
 import Link from 'next/link'
 import React from 'react'
 
-const Card: React.FC<IBlogs> = (blogs: IBlogs) => {
+const Card: React.FC<IBlogs> = blogs => {
   const { colorMode } = useColorMode()
   const [overlay, setOverlay] = React.useState<boolean>(false)
 
@@ -50,12 +50,14 @@ const Card: React.FC<IBlogs> = (blogs: IBlogs) => {
         >
           <SimpleGrid columns={{ base: 1 }} gap={6}>
             <Box
+              transform={overlay ? 'scale(1.1)' : 'scale(1.0)'}
+              transition="transform 300ms ease-out"
               rounded="md"
-              style={
-                overlay
-                  ? { transform: 'scale(1.1)', transition: 'tranform 400ms easeOut' }
-                  : { transform: 'scale(1)', transition: 'transform 400ms easeOut' }
-              }
+              //   style={
+              //     overlay
+              //       ? { transform: 'scale(1.1)', transition: 'tranform 400ms easeOut' }
+              //       : { transform: 'scale(1)', transition: 'transform 400ms easeOut' }
+              //   }
             >
               <Image src={blogs.thumbnails} width={450} height={320} />
             </Box>
